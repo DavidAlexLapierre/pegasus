@@ -11,7 +11,7 @@ namespace Amethyst {
 		void run();
 
 	private:
-		GLFWwindow* window;
+		GLFWwindow* window{};
 		void terminate();
 	};
 }
