@@ -164,12 +164,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\engine\core\game.cpp" />
+    <ClCompile Include="src\engine\core\sceneManager.cpp" />
     <ClCompile Include="src\glad.c" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\engine\interfaces\IDisposable.h" />
-    <ClInclude Include="include\engine\managers\sceneManager.h" />
+    <ClInclude Include="include\engine\core\sceneManager.h" />
     <ClInclude Include="include\game\core\app.h" />
     <ClInclude Include="include\engine\core\game.h" />
   </ItemGroup>

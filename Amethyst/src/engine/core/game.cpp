@@ -1,9 +1,9 @@
 #include "engine/core/game.h"
 
-namespace Amethyst {
-	Game::Game() {
+namespace Amethyst::Core {
+	Game::Game(const char* title) {
 		if (glfwInit()) {
-			window = glfwCreateWindow(640, 480, "Amethyst", NULL, NULL);
+			window = glfwCreateWindow(640, 480, title, NULL, NULL);
 			if (!window) {
 				terminateGLFW();
 			}

@@ -5,10 +5,10 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 
-namespace Amethyst {
+namespace Amethyst::Core {
 	class Game : IDisposable {
 	public:
-		Game();
+		Game(const char* title);
 		~Game();
 		/// <summary>
 		/// Runs the game loop

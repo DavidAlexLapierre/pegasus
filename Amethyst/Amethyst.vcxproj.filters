@@ -24,6 +24,9 @@
     <ClCompile Include="src\engine\core\game.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\engine\core\sceneManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\engine\core\game.h">
@@ -32,7 +35,7 @@
     <ClInclude Include="include\game\core\app.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\engine\managers\sceneManager.h">
+    <ClInclude Include="include\engine\core\sceneManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\engine\interfaces\IDisposable.h">
