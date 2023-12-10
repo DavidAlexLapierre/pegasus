@@ -1,6 +1,6 @@
 #pragma once
 
-#include "engine/core/game.h"
+#include "framework/core/game.h"
 
 namespace Game {
 	class App : public Amethyst::Core::Game {	

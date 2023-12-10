@@ -1,6 +1,6 @@
 #pragma once
 
-#include "engine/interfaces/IDisposable.h";
+#include "framework/interfaces/IDisposable.h"
 
 namespace Amethyst::Core {
 	class SceneManager : IDisposable {

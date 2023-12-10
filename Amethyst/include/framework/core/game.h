@@ -1,6 +1,6 @@
 #pragma once
 
-#include "engine/interfaces/IDisposable.h";
+#include "framework/interfaces/IDisposable.h"
 
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>

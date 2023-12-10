@@ -29,16 +29,19 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\engine\core\game.h">
+    <ClInclude Include="include\framework\core\game.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\game\core\app.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\engine\core\sceneManager.h">
+    <ClInclude Include="include\framework\core\sceneManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\engine\interfaces\IDisposable.h">
+    <ClInclude Include="include\framework\interfaces\IDisposable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\framework\core\scene.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

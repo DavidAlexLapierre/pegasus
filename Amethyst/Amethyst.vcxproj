@@ -169,10 +169,11 @@
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\engine\interfaces\IDisposable.h" />
-    <ClInclude Include="include\engine\core\sceneManager.h" />
+    <ClInclude Include="include\framework\core\scene.h" />
+    <ClInclude Include="include\framework\interfaces\IDisposable.h" />
+    <ClInclude Include="include\framework\core\sceneManager.h" />
     <ClInclude Include="include\game\core\app.h" />
-    <ClInclude Include="include\engine\core\game.h" />
+    <ClInclude Include="include\framework\core\game.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
