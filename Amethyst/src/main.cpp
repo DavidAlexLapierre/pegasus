@@ -1,6 +1,10 @@
 #include "game/core/app.h"
 
 int main() {
-	Game::App app;
-	app.run();
+	auto app = new Game::App();
+	app->run();
+
+	app->dispose();
+
+	delete app;
 }

@@ -1,11 +1,11 @@
-#include "amethyst/core/game.h"
+#include "engine/core/game.h"
 
 namespace Amethyst {
 	Game::Game() {
 		if (glfwInit()) {
 			window = glfwCreateWindow(640, 480, "Amethyst", NULL, NULL);
 			if (!window) {
-				terminate();
+				terminateGLFW();
 			}
 			else {
 				glfwMakeContextCurrent(window);
@@ -29,13 +29,17 @@ namespace Amethyst {
 			glfwSwapBuffers(window);
 			glfwPollEvents();
 		}
-		terminate();
 	}
 
-	void Game::terminate() {
+	void Game::terminateGLFW() {
 		if (window) {
 			glfwDestroyWindow(window);
 		}
 		glfwTerminate();
+	}
+
+	void Game::dispose() {
+		// Implement dispose logic
+		terminateGLFW();
 	}
 }
