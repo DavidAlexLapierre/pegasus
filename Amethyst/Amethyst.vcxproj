@@ -164,6 +164,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\engine\core\game.cpp" />
+    <ClCompile Include="src\engine\core\scene.cpp" />
     <ClCompile Include="src\engine\core\sceneManager.cpp" />
     <ClCompile Include="src\glad.c" />
     <ClCompile Include="src\main.cpp" />

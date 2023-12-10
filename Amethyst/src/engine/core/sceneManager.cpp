@@ -1,11 +1,14 @@
 #include "framework/core/sceneManager.h"
 
 namespace Amethyst::Core {
-	void SceneManager::init() {
 
+	SceneManager::SceneManager() {
+		currentScene = nullptr;
 	}
 
 	void SceneManager::dispose() {
-
+		for (const auto& scene : scenes) {
+			scene.second->dispose();
+		}
 	}
 }

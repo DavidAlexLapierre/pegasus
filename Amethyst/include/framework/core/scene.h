@@ -5,6 +5,8 @@
 namespace Amethyst::Core {
 	class Scene : IDisposable {
 	public:
+		void init();
 		void dispose() override;
+		void reset();
 	};
 }
