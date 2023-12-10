@@ -18,7 +18,7 @@ namespace Amethyst {
 
 	}
 
-	void Game::run() {
+	int Game::run() {
 		while (!glfwWindowShouldClose(window)) {
 			glClear(GL_COLOR_BUFFER_BIT);
 
@@ -29,6 +29,8 @@ namespace Amethyst {
 			glfwSwapBuffers(window);
 			glfwPollEvents();
 		}
+
+		return 0;
 	}
 
 	void Game::terminateGLFW() {

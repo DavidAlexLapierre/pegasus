@@ -2,9 +2,11 @@
 
 int main() {
 	auto app = new Game::App();
-	app->run();
 
+	auto status = app->run();
 	app->dispose();
-
+	
 	delete app;
+
+	return status;
 }
