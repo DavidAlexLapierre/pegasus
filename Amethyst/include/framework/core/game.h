@@ -25,6 +25,12 @@ namespace Amethyst::Core {
 		/// </summary>
 		static std::shared_ptr<SceneManager> sceneManager;
 
+	protected:
+		/// <summary>
+		/// Function where you can define scenes to register from the SceneManager
+		/// </summary>
+		virtual void registerScenes() = 0;
+
 	private:
 		/// <summary>
 		/// Reference to the GLFW context windwo

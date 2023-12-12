@@ -5,6 +5,11 @@
 namespace Game {
 	class App : public Amethyst::Core::Game {	
 	public:
-		App(const char* title) : Amethyst::Core::Game(title) {}
+		App(const char* title) : Amethyst::Core::Game(title) {
+			registerScenes();
+		}
+
+	protected:
+		void registerScenes() override;
 	};
 }

@@ -31,7 +31,7 @@ namespace Amethyst::Core {
 
 		template <typename T>
 		void setScene() {
-			auto key = typeid(T);
+			std::type_index key = typeid(T);
 			if (scenes.find(key) != scenes.end()) {
 				if (currentScene != nullptr) currentScene->reset();
 				currentScene = scenes[key];

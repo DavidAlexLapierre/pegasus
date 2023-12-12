@@ -163,9 +163,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\engine\core\game.cpp" />
-    <ClCompile Include="src\engine\core\scene.cpp" />
-    <ClCompile Include="src\engine\core\sceneManager.cpp" />
+    <ClCompile Include="src\framework\core\game.cpp" />
+    <ClCompile Include="src\framework\core\scene.cpp" />
+    <ClCompile Include="src\framework\core\sceneManager.cpp" />
+    <ClCompile Include="src\game\core\app.cpp" />
     <ClCompile Include="src\glad.c" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
@@ -175,6 +176,7 @@
     <ClInclude Include="include\framework\core\sceneManager.h" />
     <ClInclude Include="include\game\core\app.h" />
     <ClInclude Include="include\framework\core\game.h" />
+    <ClInclude Include="include\game\scenes\mainScene.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
