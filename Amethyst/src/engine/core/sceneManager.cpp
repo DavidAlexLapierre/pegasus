@@ -1,7 +1,5 @@
 #include "framework/core/sceneManager.h"
 
-#include <iostream>
-
 namespace Amethyst::Core {
 
 	SceneManager::SceneManager() {
@@ -13,7 +11,12 @@ namespace Amethyst::Core {
 	/// </summary>
 	/// <param name="deltaT">Time between each frame in seconds</param>
 	void SceneManager::update(double deltaT) {
-		std::cout << deltaT << std::endl;
+		if (currentScene != nullptr) {
+
+		}
+		else {
+			throw std::exception("Make sure to register a scene in the SceneManager");
+		}
 	}
 
 	void SceneManager::dispose() {
