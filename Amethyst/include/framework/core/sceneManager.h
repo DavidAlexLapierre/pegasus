@@ -13,6 +13,7 @@ namespace Amethyst::Core {
 	public:
 		SceneManager();
 		void dispose() override;
+		void update(double deltaT);
 
 		/// <summary>
 		/// Register a scene to the scene manager. It can then be referenced by its type id
@@ -24,7 +25,7 @@ namespace Amethyst::Core {
 			static_assert(std::is_base_of<Scene, T>::value, "T must be derived of Scene");
 			scenes[typeid(T)] = scene;
 			if (currentScene == nullptr) {
-
+				setScene<T>();
 			}
 		}
 
