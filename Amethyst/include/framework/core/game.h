@@ -30,6 +30,8 @@ namespace Amethyst::Core {
 		/// Function where you can define scenes to register from the SceneManager
 		/// </summary>
 		virtual void registerScenes() = 0;
+		const int WINDOW_BASE_W = 1280;
+		const int WINDOW_BASE_H = 720;
 
 	private:
 		/// <summary>

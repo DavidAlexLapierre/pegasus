@@ -9,19 +9,38 @@ namespace Amethyst::Core {
 
 	Game::Game(const char* title) {
 		if (glfwInit()) {
-			window = glfwCreateWindow(640, 480, title, NULL, NULL);
+			window = glfwCreateWindow(WINDOW_BASE_W, WINDOW_BASE_H, title, NULL, NULL);
 			if (!window) {
 				terminateGLFW();
-			}
-			else {
-				glfwMakeContextCurrent(window);
-				gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
+			} else {
+				// Get the primary monitor
+				GLFWmonitor* monitor = glfwGetPrimaryMonitor();
+				if (!monitor) {
+					terminateGLFW();
+				}
+				else {
+					// Get the monitor's video mode
+					const GLFWvidmode* mode = glfwGetVideoMode(monitor);
+					if (!mode) {
+						terminateGLFW();
+					}
+					else {
+						// Calculate the position to center the window
+						int xPos = (mode->width - WINDOW_BASE_W) / 2;
+						int yPos = (mode->height - WINDOW_BASE_H) / 2;
+
+						// Set the window position
+						glfwSetWindowPos(window, xPos, yPos);
+						glfwMakeContextCurrent(window);
+						gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
+					}
+				}
 			}
 		}
 	}
 
 	Game::~Game() {
-
+		dispose();
 	}
 
 	int Game::run() {
